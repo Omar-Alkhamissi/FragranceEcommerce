@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{O as e,q as o,z as r}from"./index-xuUz9X5j.js";const s={setup(){return r(()=>{sessionStorage.clear()}),{}}},n={class:"text-h4 text-center q-mt-md q-mb-md text-primary"};function a(c,m,p,_,d,u){return o(),e("div",n,"Customer now logged out")}const l=t(s,[["render",a]]);export{l as default};

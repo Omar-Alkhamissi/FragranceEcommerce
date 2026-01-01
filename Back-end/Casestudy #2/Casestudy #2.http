@@ -1,0 +1,6 @@
+@FragEcom_HostAddress = http://localhost:5139
+
+GET {{FragEcom_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
