@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@quasar/app-vite": "^2.3.0"
+  }
+}
