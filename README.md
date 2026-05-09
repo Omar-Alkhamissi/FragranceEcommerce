@@ -27,6 +27,13 @@ npm install
 npm run dev
 ```
 
+Run frontend tests and production build:
+
+```bash
+npm test
+npm run build
+```
+
 Backend:
 
 ```bash
@@ -36,6 +43,34 @@ dotnet run --project "FragranceECommerceApi/FragE-Commerce.csproj"
 ```
 
 Configure the backend connection string in `Back-end/FragranceECommerceApi/appsettings.json` or through user secrets/environment variables before using a real database.
+
+## Verification
+
+- `npm test` runs Node's built-in test runner against storefront utility behavior: currency/date formatting, API path construction, JSON request bodies, bearer-token headers, and HTTP error handling.
+- `npm run build` verifies the Quasar SPA production bundle.
+- The ASP.NET Core API project builds under the installed .NET 8 SDK.
+
+## Architecture
+
+```text
+Quasar/Vue storefront
+  -> src/utils/apiutil.js
+      -> ASP.NET Core controllers
+          -> DAO/helper layer
+              -> EF Core AppDbContext
+                  -> SQL Server
+```
+
+## Demo Data
+
+- Product, brand, branch, customer, cart, and order entities are represented in `Back-end/FragranceECommerceApi/DAL/DomainClasses`.
+- EF Core migrations document the schema evolution for customer, order, branch, and Azure deployment iterations.
+
+## Known Limitations
+
+- Backend automated tests are still future work; current automated coverage is frontend utility/smoke coverage plus build verification.
+- `appsettings.json` uses local placeholder configuration. Real connection strings and JWT secrets should be supplied through user secrets, environment variables, or a secret manager.
+- Publish profiles are ignored by git and should not be treated as resume evidence for a currently live deployment unless a live URL is verified.
 
 ## Project Structure
 
