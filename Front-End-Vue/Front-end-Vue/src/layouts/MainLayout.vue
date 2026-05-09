@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title>Info3181 Case Study</q-toolbar-title>
+        <q-toolbar-title>Spade Fragrance</q-toolbar-title>
          <q-btn flat round dense icon="reorder" class="q-ml-auto">
           <q-menu>
             <q-list style="min-width: 120px">
@@ -49,7 +49,7 @@
         <q-toolbar-title>
           <!-- Step 18: subtitle content -->
           <div class="text-subtitle2">
-            Best viewed on mobile device — Omar Alkhamissi &copy;{{ new Date().getFullYear() }}
+            Spade Fragrance &copy;{{ new Date().getFullYear() }}
           </div>
         </q-toolbar-title>
       </q-toolbar>

@@ -1,40 +1,23 @@
-# CaseStudy (casestudyvue)
+# Spade Fragrance Frontend
 
-A Quasar Project
+This is the Quasar/Vue storefront for the FragranceECommerce application. It supports brand browsing, product details, cart workflows, branch pages, order history, and customer authentication screens.
 
-## Install the dependencies
+## Getting Started
+
 ```bash
-yarn
-# or
 npm install
+npm run dev
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+Build for production:
+
 ```bash
-quasar dev
+npm run build
 ```
 
+## Useful Scripts
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+- `npm run dev`: start the Quasar development server
+- `npm run build`: create a production build
+- `npm run lint`: run ESLint
+- `npm run format`: format source files

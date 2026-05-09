@@ -1,9 +1,9 @@
 {
-  "name": "casestudyvue",
+  "name": "fragrance-ecommerce-frontend",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Case 2",
-  "author": "Oalkhamissi <owael323323@gmail.com>",
+  "description": "Fragrance ecommerce storefront",
+  "productName": "Spade Fragrance",
+  "author": "",
   "type": "module",
   "private": true,
   "scripts": {
